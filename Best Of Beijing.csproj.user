@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <AppxShowAllApps>False</AppxShowAllApps>
+    <AppxPackageIsForStore>True</AppxPackageIsForStore>
+    <AppxBuildConfigurationSelection>x64</AppxBuildConfigurationSelection>
+    <PackageOptionalProjectsInIdeBuilds>True</PackageOptionalProjectsInIdeBuilds>
+    <Source>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</Source>
+    <SmallTileSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</SmallTileSource>
+    <MediumTileSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</MediumTileSource>
+    <WideTileSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</WideTileSource>
+    <LargeTileSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</LargeTileSource>
+    <AppIconSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</AppIconSource>
+    <SplashScreenSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</SplashScreenSource>
+    <PackageLogoSource>C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\Assets\21-512[1].png</PackageLogoSource>
+  </PropertyGroup>
+</Project>

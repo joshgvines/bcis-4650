@@ -1,0 +1,105 @@
+﻿<Page
+    x:Class="Best_Of_Beijing.WhatPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Best_Of_Beijing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    mc:Ignorable="d">
+    <Grid>
+
+        <ScrollViewer HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="auto" Width="auto" BorderBrush="Blue" BorderThickness="1" 
+                      HorizontalScrollBarVisibility="Visible" Margin="10" Background="{ThemeResource SystemControlBaseLowAcrylicElementBrush}">
+
+            <StackPanel Height="auto" Orientation="Horizontal" VerticalAlignment="Top">
+                <!-- images are 1020 / 650 all labeled for reuse -->
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/forbidden2.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Center" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='14' Width="150" Height="35" Content="Forbidden City"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/wall2.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='13' Width="150" Height="35" Content="Great Wall"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/heaven.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='12' Width="150" Height="35" Content="Temple of Heaven"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/summer.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='11' Width="150" Height="35" Content="Summer Palace"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/square2.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='10' Width="150" Height="35" Content="Tiananmen Square"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/ming2.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='9' Width="150" Height="35" Content="Ming Tombs"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+                <StackPanel Orientation="Vertical" Margin="10" HorizontalAlignment="Center">
+                    <Border Height="auto" Width="auto" BorderBrush="blue" BorderThickness="1">
+                        <Image Source="/Assets/park.jpg" HorizontalAlignment="Center" Height="auto" VerticalAlignment="Top" Width="240"/>
+                    </Border>
+                    <Button x:ConnectionId='8' Width="150" Height="35" Content="Jingshan Park"                        HorizontalAlignment="Center" Margin="10"/>
+
+                </StackPanel>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <Grid x:ConnectionId='1' x:Name="pageGrid" Width="auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="10,265,15,15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="auto"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="10"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Vertical" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Width="auto" Height="auto" Margin="2">
+                <Button x:ConnectionId='4' Width="105" x:Name="btnBeijing" Content="Beijing" Background="DimGray" Foreground="White" Margin="2,2,2,35"                         />
+                <Button x:ConnectionId='5' Width="105" x:Name="btnAerial" Content="Aerial" Background="DarkGray" Foreground="White" Margin="2"                        />
+                <Button x:ConnectionId='6' Width="105" x:Name="btnAerialRoad" Content="Roads/Aerial" Background="DarkGray" Foreground="White" Margin="2"                            />
+                <Button x:ConnectionId='7' Width="105" x:Name="btnDefault" Content="Roads" Background="DarkGray" Foreground="White" Margin="2"                         />
+            </StackPanel>
+
+            <Maps:MapControl x:ConnectionId='2' x:Name="MapControl1" Grid.Column="1" VerticalAlignment="Stretch" HorizontalAlignment="Stretch"
+                             MapServiceToken="4ctaaqyO9qUbYbK638xM~TSqMBQz8BkrPhKN0QNOreg~Ap88he34h_S6hOn8_I-5qc0IQzF2N79oaVpMDnFniLAWuN4cmRBPYyEkcv9dT5gP"/>
+
+            <StackPanel BorderBrush="Blue" BorderThickness="1"  Grid.Column="3" Orientation="Vertical" Background="{ThemeResource SystemControlBaseLowAcrylicElementBrush}" 
+                        HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="auto" Height="auto">
+                <TextBlock x:ConnectionId='3' Name="content" Text="..." TextWrapping="Wrap" 
+                           HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10" />
+
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Page>
+

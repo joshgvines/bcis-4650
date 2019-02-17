@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="Best_Of_Beijing.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Best_Of_Beijing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="30">
+            <TextBlock Text="Settings page to be added soon."></TextBlock>
+            <ToggleSwitch Header="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Toggled="ToggleSwitch_Toggled"/>
+            <ToggleSwitch Header="" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Toggled="ToggleSwitch_Toggled_1"/>
+        </StackPanel>
+
+    </Grid>
+</Page>

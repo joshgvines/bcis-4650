@@ -1,0 +1,43 @@
+﻿<Page
+    x:Class="Best_Of_Beijing.WeatherPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Best_Of_Beijing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+    mc:Ignorable="d">
+
+    <Grid Width="auto" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Margin="5">
+        <StackPanel BorderBrush="Blue" BorderThickness="1" Orientation="Vertical" HorizontalAlignment="Center" Margin="10,10,0,0" Width="650" Height="550" Opacity=".8" Background="{ThemeResource SystemControlBaseLowAcrylicElementBrush}">
+
+            <!--Title/Refresh-->
+            <Button x:ConnectionId='1' Content="Get Weather"                       HorizontalAlignment="Center" Margin="10" FontSize="10"/>
+            <TextBlock x:ConnectionId='2' Name="TitleBlock" HorizontalAlignment="Center" Margin="10" FontSize="40"/>
+
+            <!--Temperature-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="auto" Height="auto">
+                <TextBlock HorizontalAlignment="Center" Text="Temperature:" FontSize="30" Margin="10"/>
+
+                <StackPanel Orientation="Horizontal" Width="auto" Height="auto" HorizontalAlignment="Center">
+                    <TextBlock x:ConnectionId='6' Name="TempCurBlock" Text="" HorizontalAlignment="Center" Margin="10" FontSize="25" Foreground="Firebrick"/>
+                </StackPanel>
+
+            </StackPanel>
+
+            <!--Conditions-->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Width="auto" Height="auto">
+
+                <TextBlock HorizontalAlignment="Center" Text="Conditions:" FontSize="30" Margin="10"/>
+
+                <StackPanel Orientation="Vertical" Width="auto" Height="auto" HorizontalAlignment="Left" Margin="10">
+                    <TextBlock x:ConnectionId='3' Name="HumidBlock" Text="" HorizontalAlignment="Left" Margin="5"/>
+                    <TextBlock x:ConnectionId='4' Name="DescBlock" Text="" HorizontalAlignment="Left" Margin="5"/>
+                    <TextBlock x:ConnectionId='5' Name="PressBlock" Text="" HorizontalAlignment="Left" Margin="5"/>
+                </StackPanel>
+
+            </StackPanel>
+
+        </StackPanel>
+    </Grid>
+</Page>
+

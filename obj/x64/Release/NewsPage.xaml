@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="Best_Of_Beijing.NewsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Best_Of_Beijing"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MaxWidth="500"/>
+                <ColumnDefinition MinWidth="500"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid x:ConnectionId='1' Grid.Column="0" Padding="12,12,12,0"                     >
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <TextBox Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Foreground="Blue" Text="ChinaDaily" FontSize="28" IsReadOnly="True"/>
+                <TextBox x:ConnectionId='3' Grid.Row="1" Name="Value" VerticalAlignment="Center" TextWrapping="Wrap" Text="Click here and Press ENTER key to see latest news stories below. Click on a blue web address to see story details on the right" IsReadOnly="True"/>
+
+                <ScrollViewer Grid.Row="2" Width="500" HorizontalAlignment="Center" BorderThickness="0" Background="black" Opacity=".8">
+                    <ItemsControl x:ConnectionId='4' Name="Display" Width="auto" Margin="10">
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <StackPanel Margin="3">
+
+                                    <TextBlock Text="{Binding Path=Title.Text}" FontSize="24" TextWrapping="Wrap" Foreground="White" Margin="2,2,10,2"/>
+                                    <TextBlock Text="{Binding Path=PublishedDate}" Foreground="White"/>
+                                    <TextBlock Text="{Binding Path=Summary.Text}" TextWrapping="WrapWholeWords" Foreground="Gray"/>
+                                    <TextBlock x:ConnectionId='5' x:Name="address"                           Text="{Binding Path=Links[0].Uri}" Foreground="Blue"/>
+
+                                    <TextBlock></TextBlock>
+
+                                    <Rectangle x:Name="BorderBottom"
+                                               Height="4"
+                                               HorizontalAlignment="Stretch"
+                                               VerticalAlignment="Bottom"
+                                               Fill="Blue" />
+                                    
+                                </StackPanel>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </ScrollViewer>
+            </Grid>
+
+            <Grid Grid.Column="1" Margin="5" BorderBrush="Blue" BorderThickness="1">
+                <WebView x:ConnectionId='2' x:Name="ArticleWebView"/>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
+

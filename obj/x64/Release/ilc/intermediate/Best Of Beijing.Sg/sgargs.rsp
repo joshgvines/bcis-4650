@@ -1,0 +1,12 @@
+/ref:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.sharedlibrary-x64\2.0.0\tools\SharedLibrary\ret\AnalysisILToc"
+/ref:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\intermediate\PreMergeILTransformed"
+/ref:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\in\\"
+/ref:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\2.0.3\tools\x64\ilc\lib\Private\\"
+/ref:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\in"
+/ref:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\in\WinMetadata"
+/ca:System.Private.CoreLib
+/cscpath:"C:\Program Files (x86)\Microsoft SDKs\NuGetPackagesFallback\microsoft.net.native.compiler\2.0.3\tools\csc"
+/out:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\intermediate\SgGenerated\\"
+/int:"C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\intermediate\Best Of Beijing.Sg"
+"@C:\Users\Josh\source\repos\Best Of Beijing\Best Of Beijing\obj\x64\Release\ilc\intermediate\Best Of Beijing.Sg\ComputedSerializationInput.txt"
